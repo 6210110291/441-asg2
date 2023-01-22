@@ -1,0 +1,16 @@
+C:\Users\asus\source\repos\Asg2_BlendForm\bin\Debug\netcoreapp3.1\Asg2_BlendForm.exe
+C:\Users\asus\source\repos\Asg2_BlendForm\bin\Debug\netcoreapp3.1\Asg2_BlendForm.deps.json
+C:\Users\asus\source\repos\Asg2_BlendForm\bin\Debug\netcoreapp3.1\Asg2_BlendForm.runtimeconfig.json
+C:\Users\asus\source\repos\Asg2_BlendForm\bin\Debug\netcoreapp3.1\Asg2_BlendForm.runtimeconfig.dev.json
+C:\Users\asus\source\repos\Asg2_BlendForm\bin\Debug\netcoreapp3.1\Asg2_BlendForm.dll
+C:\Users\asus\source\repos\Asg2_BlendForm\bin\Debug\netcoreapp3.1\Asg2_BlendForm.pdb
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.Form1.resources
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.AssemblyInfoInputs.cache
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.AssemblyInfo.cs
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.dll
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.pdb
+C:\Users\asus\source\repos\Asg2_BlendForm\obj\Debug\netcoreapp3.1\Asg2_BlendForm.genruntimeconfig.cache
