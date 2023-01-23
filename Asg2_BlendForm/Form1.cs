@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +30,13 @@ namespace Asg2_BlendForm
 
         }
 
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            float weigth = trackBar1.Value;
+            weigth = weigth / 100;
+            //textBox1.AppendText(newLine + "W = " + weigth);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -37,7 +44,7 @@ namespace Asg2_BlendForm
                 //------------------------------lotus.jpg------------------------------
                 stopWatch1.Reset();
                 stopWatch1.Start();
-
+                
                 image1 = new Bitmap(@"lotus.jpg", true);
 
                 stopWatch1.Stop();
@@ -83,8 +90,10 @@ namespace Asg2_BlendForm
             stopWatch1.Reset();
             stopWatch1.Start();
             object lockObject = new object();
-            //using (Bitmap image1 = new Bitmap("lotus.jpg"))
-            //using (Bitmap image2 = new Bitmap("steve-jobs.jpg"))
+
+            float weigth = trackBar1.Value;
+            weigth = weigth / 100;
+            //textBox1.AppendText(newLine + "W = " + weigth);
 
             // Create a new bitmap to hold the blended image
             Bitmap blendedImage = new Bitmap(image1.Width, image1.Height);
@@ -112,13 +121,13 @@ namespace Asg2_BlendForm
             // Use Parallel.For() to blend the images
             Parallel.For(0, bytes / 3, i =>
             {
-                lock (lockObject)
-                {
+                //lock (lockObject)
+                //{
                     int index = i * 3;
-                    blendedValues[index] = (byte)((rgbValues1[index] + rgbValues2[index]) / 2);
-                    blendedValues[index + 1] = (byte)((rgbValues1[index + 1] + rgbValues2[index + 1]) / 2);
-                    blendedValues[index + 2] = (byte)((rgbValues1[index + 2] + rgbValues2[index + 2]) / 2);
-                }
+                    blendedValues[index] = (byte)((rgbValues1[index] * weigth) + (rgbValues2[index] * weigth));
+                    blendedValues[index + 1] = (byte)((rgbValues1[index + 1] * (1 - weigth)) + (rgbValues2[index + 1] * weigth));
+                    blendedValues[index + 2] = (byte)((rgbValues1[index + 2] * (1 - weigth)) + (rgbValues2[index + 2] * weigth));
+                //}
             });
 
             // Copy the blended RGB values back into the blended image
@@ -130,7 +139,7 @@ namespace Asg2_BlendForm
             blendedImage.UnlockBits(blendedData);
 
             stopWatch1.Stop();
-            //pictureBox3.Image = blendedImage;
+            pictureBox3.Image = blendedImage;
             //pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             textBox1.AppendText(newLine + "Time for Blending these two images = " + stopWatch1.ElapsedMilliseconds.ToString() + " mS\r\n");
         }
