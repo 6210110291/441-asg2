@@ -124,7 +124,7 @@ namespace Asg2_BlendForm
                 //lock (lockObject)
                 //{
                     int index = i * 3;
-                    blendedValues[index] = (byte)((rgbValues1[index] * weigth) + (rgbValues2[index] * weigth));
+                    blendedValues[index] = (byte)((rgbValues1[index] * (1 - weigth)) + (rgbValues2[index] * weigth));
                     blendedValues[index + 1] = (byte)((rgbValues1[index + 1] * (1 - weigth)) + (rgbValues2[index + 1] * weigth));
                     blendedValues[index + 2] = (byte)((rgbValues1[index + 2] * (1 - weigth)) + (rgbValues2[index + 2] * weigth));
                 //}
