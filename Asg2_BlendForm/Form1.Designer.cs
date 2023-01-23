@@ -1,4 +1,4 @@
-﻿
+
 namespace Asg2_BlendForm
 {
     partial class Form1
@@ -66,9 +66,11 @@ namespace Asg2_BlendForm
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(446, 50);
             this.trackBar1.TabIndex = 4;
+            trackBar1.Minimum = 0;
             trackBar1.Maximum = 100;
             trackBar1.TickFrequency = 10;
-            //this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            trackBar1.Value = 50;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // button2
             // 
